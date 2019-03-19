@@ -1,0 +1,23 @@
+Total .m file: 9
+
+1. All the .m file should be in the same Directory
+2. 'top_script_colorado.m' is the top level script, all others .m files are functions called by top_script_colorado.m
+3. Open the 'top_script_colorado.m' in MATLAB
+4. Specify the Path of of your .MAT files
+5. Specify the first .MAT file name of the time stamp you want to process
+6. Specify the number of files you wnat to process (fnum)
+7. Specify the number of integration done in hardware (not mentioned in config file)
+8. Now, If you have Linux on your system and you want to parse the parameters directly from config (.xml) file,
+   the follow the instruciton given in 'top_script_colorado.m' file
+9. If you don't want to parse the config file then just specify the following parameters
+                num of pulses integrated over, hN=
+                adc_sampFreq=
+                decimation, dec=
+                NumPoints=60000
+                dec_sampFreq=
+                pulse_width=
+                chirp_rate=
+
+10.SPecify the GPS file full path for the same time stamp data you are processing
+11. Now Run the 'top_script_colorado.m' script
+                
