@@ -71,7 +71,7 @@ data_t_1 = ifft(data_image_1, [], 1)./hann_old;
 %slow time index mismatch
 %find minimum slow time index
 slow_data0=size(data_t_0,2);
-slow_data1=size(data_t_1,1 );
+slow_data1=size(data_t_1,2 );
 slow_indx=min(slow_data0,slow_data1);
 data_t_0=data_t_0(:,1:slow_indx);
 data_t_1=data_t_1(:,1:slow_indx);
