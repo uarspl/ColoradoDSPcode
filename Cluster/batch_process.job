@@ -1,0 +1,12 @@
+#!/bin/bash -l
+
+#SBATCH -q defq
+#SBATCH -N 1
+#SBATCH -n 32
+#SBATCH -J BatchProc
+#SBATCH -o out.batch_proc.%j
+#SBATCH -e err.batch_proc.%j
+
+module load matlab
+
+./ParallelRunScript.sh 32 $1
